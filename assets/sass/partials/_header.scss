@@ -1,0 +1,42 @@
+header{
+    padding: 1rem;
+    box-shadow: $shadowPrimary;
+    .headerLeft{
+        .headerLogo{
+             color: $colorPrimario;
+             text-decoration: none;
+             font-size: 1.25rem;
+        }
+    }
+    .headerRight{
+       
+        nav{
+            .mainMenu{
+                @include listaGenerica;
+
+                .menuItem{
+                    padding: 1rem;
+                    color: $colorPrimario;
+
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+                @media screen and (max-width: 780px){
+                    padding: 2rem;
+
+                    .menuItem{
+                        color: red;
+                    }
+                }
+                @media screen and (max-width: 550px){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen {
+   
+}
